@@ -1,0 +1,14 @@
+[
+  {
+    "id": "case-01",
+    "jd": "Senior Backend Engineer\n\nWe are looking for a Senior Backend Engineer with 5+ years of experience building scalable systems in Node.js or Go. You will own our payments infrastructure and mentor junior engineers.\n\nRequirements:\n- 5+ years of backend engineering experience, ideally with Node.js or Go\n- Experience designing and operating distributed systems at scale\n- Strong communication skills; comfortable mentoring junior engineers\n- Bonus points for experience with Kubernetes\n\nWe offer competitive pay, remote work, and a collaborative engineering culture.",
+    "company_url": "https://about.gitlab.com",
+    "days": 5
+  },
+  {
+    "id": "case-02",
+    "jd": "Junior Support Engineer needed.",
+    "company_url": "https://posthog.com",
+    "days": 3
+  }
+]

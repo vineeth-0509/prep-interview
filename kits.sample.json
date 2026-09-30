@@ -1,0 +1,564 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-30T05:19:54.776Z",
+  "kits": [
+    {
+      "id": "case-01",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "About",
+          "company_url": "https://about.gitlab.com",
+          "role": "Senior Backend Engineer",
+          "location": "",
+          "jd_chars": 562,
+          "researched_at": "2026-09-30T05:19:35.412Z",
+          "pages_used": [
+            "https://about.gitlab.com/",
+            "https://about.gitlab.com/solutions/application-security-testing/",
+            "https://about.gitlab.com/blog/ubs-gitlab-devops-platform/",
+            "https://about.gitlab.com/gitlab-duo-agent-platform/",
+            "https://about.gitlab.com/blog/introducing-gitlab-credits/",
+            "https://about.gitlab.com/gitlab-orbit/",
+            "https://about.gitlab.com/solutions/code-suggestions/",
+            "https://about.gitlab.com/blog/gitlab-jetbrains-neovim-plugins/",
+            "https://about.gitlab.com/blog/gitlab-visual-studio-extension/",
+            "https://about.gitlab.com/blog/self-managed-support-for-code-suggestions/",
+            "https://about.gitlab.com/solutions/continuous-integration/",
+            "https://about.gitlab.com/blog/5-ways-gitlab-pipeline-logic-solves-real-engineering-problems/",
+            "https://about.gitlab.com/blog/tags/ci-cd/",
+            "https://about.gitlab.com/blog/track-ci-component-usage/",
+            "https://about.gitlab.com/partners/technology-partners/aws/"
+          ]
+        },
+        "company_brief": {
+          "summary": "GitLab is a software development platform that offers a comprehensive suite of tools for the entire software lifecycle, including planning, coding, security, and deployment. It emphasizes speed and control, enabling teams to work collaboratively while automating repetitive tasks through AI-powered agents.",
+          "what_they_do": "GitLab provides an integrated platform for software development that includes features for CI/CD, application security testing, and AI orchestration through its Duo Agent Platform. It aims to streamline workflows and enhance security across various industries, adapting to specific regulatory requirements.",
+          "sources": [
+            "https://about.gitlab.com/",
+            "https://about.gitlab.com/solutions/application-security-testing/",
+            "https://about.gitlab.com/blog/ubs-gitlab-devops-platform/",
+            "https://about.gitlab.com/gitlab-duo-agent-platform/",
+            "https://about.gitlab.com/blog/introducing-gitlab-credits/",
+            "https://about.gitlab.com/gitlab-orbit/"
+          ],
+          "meta": {
+            "source": "generated",
+            "pinned": false,
+            "version": 0
+          }
+        },
+        "role": {
+          "title": "Senior Backend Engineer",
+          "seniority": "Senior",
+          "responsibilities": [
+            "own our payments infrastructure",
+            "mentor junior engineers"
+          ],
+          "requirements": [
+            {
+              "id": "r1",
+              "text": "5+ years of backend engineering experience, ideally with Node.js or Go",
+              "kind": "technical",
+              "priority": "nice",
+              "meta": {
+                "source": "generated",
+                "pinned": false,
+                "version": 0
+              }
+            },
+            {
+              "id": "r2",
+              "text": "Experience designing and operating distributed systems at scale",
+              "kind": "technical",
+              "priority": "nice",
+              "meta": {
+                "source": "generated",
+                "pinned": false,
+                "version": 0
+              }
+            },
+            {
+              "id": "r3",
+              "text": "Strong communication skills; comfortable mentoring junior engineers",
+              "kind": "behavioural",
+              "priority": "nice",
+              "meta": {
+                "source": "generated",
+                "pinned": false,
+                "version": 0
+              }
+            },
+            {
+              "id": "r4",
+              "text": "Bonus points for experience with Kubernetes",
+              "kind": "technical",
+              "priority": "nice",
+              "meta": {
+                "source": "generated",
+                "pinned": false,
+                "version": 0
+              }
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "Can you describe a complex backend system you built using Node.js or Go? What were the key challenges you faced and how did you overcome them?",
+            "answer_outline": "Discuss the architecture of the system, specific technologies used, challenges like scaling or performance issues, and solutions implemented. Highlight any lessons learned and how they influenced future projects.",
+            "difficulty": 2,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "q2",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "What are some performance optimization techniques you have applied in your backend projects using Node.js or Go?",
+            "answer_outline": "Mention specific techniques such as caching strategies, load balancing, asynchronous processing, or database optimizations. Provide examples of how these techniques improved performance and any metrics that demonstrate the impact.",
+            "difficulty": 2,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "q3",
+            "requirement_ids": [
+              "r2"
+            ],
+            "category": "technical",
+            "prompt": "Can you describe a distributed system you have designed and the challenges you faced while scaling it?",
+            "answer_outline": "Discuss specific components of the system, the architecture used, scaling strategies (like sharding or load balancing), and how challenges such as data consistency, latency, or fault tolerance were addressed.",
+            "difficulty": 2,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "q4",
+            "requirement_ids": [
+              "r2"
+            ],
+            "category": "technical",
+            "prompt": "What strategies do you employ to ensure high availability and fault tolerance in a distributed system?",
+            "answer_outline": "Outline techniques such as redundancy, failover mechanisms, monitoring, and automated recovery processes, along with examples of how these strategies were implemented in past projects.",
+            "difficulty": 3,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "q5",
+            "requirement_ids": [
+              "r3"
+            ],
+            "category": "behavioural",
+            "prompt": "Can you describe a time when you had to mentor a junior engineer? What was the situation, what tasks did you assign, and what actions did you take to ensure their success? What was the outcome?",
+            "answer_outline": "The answer should cover the context of the mentoring situation, specific tasks assigned to the junior engineer, the methods used for communication and support, and the positive results of their development or project success.",
+            "difficulty": 2,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "q6",
+            "requirement_ids": [
+              "r3"
+            ],
+            "category": "behavioural",
+            "prompt": "Tell me about a challenging communication experience you had while mentoring a junior engineer. What was the situation, what task were you working on, what actions did you take to address the communication barrier, and what was the result?",
+            "answer_outline": "The answer should include details about the specific communication challenge, the task at hand, the strategies employed to improve communication, and the eventual positive impact on the junior engineer's performance or project outcome.",
+            "difficulty": 3,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "q7",
+            "requirement_ids": [
+              "r4"
+            ],
+            "category": "technical",
+            "prompt": "Can you describe a project where you used Kubernetes? What were the challenges you faced and how did you overcome them?",
+            "answer_outline": "Discuss specific project details, challenges like scaling, networking, or deployment issues, and solutions implemented, such as using Helm charts or configuring services.",
+            "difficulty": 2,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "q8",
+            "requirement_ids": [
+              "r4"
+            ],
+            "category": "technical",
+            "prompt": "What are some best practices you follow when deploying applications on Kubernetes?",
+            "answer_outline": "Mention practices like using namespaces, resource limits, health checks, and monitoring, as well as strategies for managing configurations and secrets.",
+            "difficulty": 1,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "Can you describe a complex backend system you built using Node.js or Go? What were the key challenges you faced and how did you overcome them?",
+            "back": "Discuss the architecture of the system, specific technologies used, challenges like scaling or performance issues, and solutions implemented. Highlight any lessons learned and how they influenced future projects.",
+            "requirement_ids": [
+              "r1"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "f2",
+            "front": "What are some performance optimization techniques you have applied in your backend projects using Node.js or Go?",
+            "back": "Mention specific techniques such as caching strategies, load balancing, asynchronous processing, or database optimizations. Provide examples of how these techniques improved performance and any metrics that demonstrate the impact.",
+            "requirement_ids": [
+              "r1"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "f3",
+            "front": "Can you describe a distributed system you have designed and the challenges you faced while scaling it?",
+            "back": "Discuss specific components of the system, the architecture used, scaling strategies (like sharding or load balancing), and how challenges such as data consistency, latency, or fault tolerance were addressed.",
+            "requirement_ids": [
+              "r2"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "f4",
+            "front": "What strategies do you employ to ensure high availability and fault tolerance in a distributed system?",
+            "back": "Outline techniques such as redundancy, failover mechanisms, monitoring, and automated recovery processes, along with examples of how these strategies were implemented in past projects.",
+            "requirement_ids": [
+              "r2"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "f5",
+            "front": "Can you describe a time when you had to mentor a junior engineer? What was the situation, what tasks did you assign, and what actions did you take to ensure their success? What was the outcome?",
+            "back": "The answer should cover the context of the mentoring situation, specific tasks assigned to the junior engineer, the methods used for communication and support, and the positive results of their development or project success.",
+            "requirement_ids": [
+              "r3"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "f6",
+            "front": "Tell me about a challenging communication experience you had while mentoring a junior engineer. What was the situation, what task were you working on, what actions did you take to address the communication barrier, and what was the result?",
+            "back": "The answer should include details about the specific communication challenge, the task at hand, the strategies employed to improve communication, and the eventual positive impact on the junior engineer's performance or project outcome.",
+            "requirement_ids": [
+              "r3"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "f7",
+            "front": "Can you describe a project where you used Kubernetes? What were the challenges you faced and how did you overcome them?",
+            "back": "Discuss specific project details, challenges like scaling, networking, or deployment issues, and solutions implemented, such as using Helm charts or configuring services.",
+            "requirement_ids": [
+              "r4"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "f8",
+            "front": "What are some best practices you follow when deploying applications on Kubernetes?",
+            "back": "Mention practices like using namespaces, resource limits, health checks, and monitoring, as well as strategies for managing configurations and secrets.",
+            "requirement_ids": [
+              "r4"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          }
+        ],
+        "schedule": {
+          "days_available": 5,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Technical & Behavioural",
+              "question_ids": [
+                "q4",
+                "q6",
+                "q1",
+                "q2",
+                "q3",
+                "q5"
+              ],
+              "minutes": 110
+            },
+            {
+              "day": 2,
+              "focus": "Technical",
+              "question_ids": [
+                "q7",
+                "q8"
+              ],
+              "minutes": 25
+            },
+            {
+              "day": 3,
+              "focus": "Spaced review",
+              "question_ids": [
+                "q4",
+                "q6",
+                "q1",
+                "q2"
+              ],
+              "minutes": 80
+            },
+            {
+              "day": 4,
+              "focus": "Spaced review",
+              "question_ids": [
+                "q3",
+                "q5",
+                "q7",
+                "q8"
+              ],
+              "minutes": 55
+            },
+            {
+              "day": 5,
+              "focus": "Spaced review",
+              "question_ids": [
+                "q4"
+              ],
+              "minutes": 25
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-02",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Posthog",
+          "company_url": "https://posthog.com",
+          "role": "Junior Support Engineer",
+          "location": "",
+          "jd_chars": 31,
+          "researched_at": "2026-09-30T05:19:54.773Z",
+          "pages_used": [
+            "https://posthog.com/",
+            "https://posthog.com/handbook",
+            "https://posthog.com/handbook/people/hiring-process",
+            "https://posthog.com/handbook/people/onboarding",
+            "https://posthog.com/handbook/people/overview",
+            "https://posthog.com/handbook/strong-team",
+            "https://posthog.com/handbook/world-class-engineering",
+            "https://posthog.com/handbook/company/culture",
+            "https://posthog.com/handbook/people/spending-money",
+            "https://posthog.com/handbook/people/compensation",
+            "https://posthog.com/handbook/growth/growth-engineering/growth-sessions",
+            "https://posthog.com/handbook/product/product-team",
+            "https://posthog.com/handbook/support/support-team",
+            "https://posthog.com/handbook/engineering/posthog-com/overview",
+            "https://posthog.com/about"
+          ]
+        },
+        "company_brief": {
+          "summary": "PostHog is a company that provides a product analytics platform designed to help teams ingest, store, and query their product and business data. Their offerings include analytics, session replays, error tracking, and more, all aimed at giving users context about their products and improving decision-making. The company emphasizes a low-cost model, with a significant portion of users not paying for the service.",
+          "what_they_do": "PostHog ingests and stores analytics, errors, replays, and business data, allowing teams to query and act on this information. They offer a range of features including product analytics, session replay, error tracking, feature flags, experiments, and surveys.",
+          "sources": [
+            "https://posthog.com/",
+            "https://posthog.com/handbook",
+            "https://posthog.com/handbook/people/hiring-process",
+            "https://posthog.com/handbook/people/onboarding",
+            "https://posthog.com/handbook/people/overview",
+            "https://posthog.com/handbook/strong-team",
+            "https://newsletter.posthog.com/p/job-interview-questions-engineers",
+            "https://www.glassdoor.com/Interview/PostHog-Product-Engineer-Interview-Questions-EI_IE4260520.0,7_KO8,24.htm",
+            "https://www.glassdoor.com/Interview/PostHog-Product-Engineer-Interview-Interview-Questions-EI_IE4260520.0,7_KO8,34.htm"
+          ],
+          "meta": {
+            "source": "generated",
+            "pinned": false,
+            "version": 0
+          }
+        },
+        "role": {
+          "title": "Junior Support Engineer",
+          "seniority": "Junior",
+          "responsibilities": [],
+          "requirements": [
+            {
+              "id": "r1",
+              "text": "Junior Support Engineer needed.",
+              "kind": "behavioural",
+              "priority": "nice",
+              "meta": {
+                "source": "generated",
+                "pinned": false,
+                "version": 0
+              }
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "behavioural",
+            "prompt": "Can you describe a time when you provided support to a user or customer? What was the situation, and what steps did you take to resolve their issue?",
+            "answer_outline": "Outline the specific issue the user faced, the actions taken to assist them, and the outcome of those actions, emphasizing communication and problem-solving skills.",
+            "difficulty": 1,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "q2",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "behavioural",
+            "prompt": "Tell me about a challenging technical problem you encountered while assisting a user. How did you approach the situation, and what was the result?",
+            "answer_outline": "Detail the technical problem, the method used to diagnose and resolve it, and the feedback from the user or the impact of the resolution on their experience.",
+            "difficulty": 2,
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "Can you describe a time when you provided support to a user or customer? What was the situation, and what steps did you take to resolve their issue?",
+            "back": "Outline the specific issue the user faced, the actions taken to assist them, and the outcome of those actions, emphasizing communication and problem-solving skills.",
+            "requirement_ids": [
+              "r1"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          },
+          {
+            "id": "f2",
+            "front": "Tell me about a challenging technical problem you encountered while assisting a user. How did you approach the situation, and what was the result?",
+            "back": "Detail the technical problem, the method used to diagnose and resolve it, and the feedback from the user or the impact of the resolution on their experience.",
+            "requirement_ids": [
+              "r1"
+            ],
+            "meta": {
+              "source": "generated",
+              "pinned": false,
+              "version": 0
+            }
+          }
+        ],
+        "schedule": {
+          "days_available": 3,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Behavioural",
+              "question_ids": [
+                "q2",
+                "q1"
+              ],
+              "minutes": 25
+            },
+            {
+              "day": 2,
+              "focus": "Spaced review",
+              "question_ids": [
+                "q2",
+                "q1"
+              ],
+              "minutes": 25
+            },
+            {
+              "day": 3,
+              "focus": "Spaced review",
+              "question_ids": [
+                "q2",
+                "q1"
+              ],
+              "minutes": 25
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    }
+  ]
+}
