@@ -12,6 +12,6 @@
     "evaluate": "npm run build --workspace=@aipk/core && npm run evaluate --workspace=@aipk/cli --"
   },
   "devDependencies": {
-    "typescript": "^5.5.4"
+    "typescript": "5.5.4"
   }
 }

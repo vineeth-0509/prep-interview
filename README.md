@@ -56,9 +56,23 @@ This is a root-level script that builds `@aipk/core` and then runs `packages/cli
 
 ### Deployment
 
-- `server`: any Node host (Render/Fly/Railway free tier). Set all vars from `.env.example` plus `NODE_ENV=production`.
-- `web`: Vercel free tier. Set `NEXT_PUBLIC_API_URL` to the deployed server's URL.
-- Because frontend and backend are different origins in production, the session cookie is set `sameSite: "none"; secure: true` there (and `lax`/non-secure locally, so plain `http://localhost` still works without a TLS cert) — see `packages/server/src/utils/cookies.ts`.
+Both platforms need to know this is an npm-workspaces monorepo where `server`/`web` depend on `@aipk/core` being built first — the settings below account for that.
+
+**Server on Render** (Web Service):
+- Root Directory: leave blank (the repo root — important, *not* `packages/server`, or npm workspace resolution breaks and `@aipk/core` won't be found).
+- Build Command: `npm install && npm run build --workspace=@aipk/core && npm run build --workspace=@aipk/server`
+- Start Command: `npm run start --workspace=@aipk/server`
+- Environment variables: everything from `packages/server/.env.example`, plus `NODE_ENV=production`. Don't set `PORT` — Render injects its own and the server already reads `process.env.PORT`. Set `FRONTEND_ORIGIN` to the exact Vercel URL once you have it (e.g. `https://your-app.vercel.app`, no trailing slash) — CORS and the session cookie both depend on this matching exactly.
+
+**Web on Vercel:**
+- Root Directory: `packages/web` (so Vercel detects it as a Next.js app).
+- In Project Settings → General, enable **"Include source files outside of the Root Directory in the Build Step"** — without this, Vercel can't see the repo root's `package.json`/lockfile/`packages/core`, since it normally isolates the Root Directory.
+- Build Command (override): `cd ../.. && npm run build --workspace=@aipk/core && npm run build --workspace=@aipk/web`
+- Install Command (override): `cd ../.. && npm install`
+- Output Directory: leave as default — Vercel resolves it relative to Root Directory (`packages/web/.next`) regardless of what directory the build command itself `cd`'d into.
+- Environment variables: `NEXT_PUBLIC_API_URL` set to the deployed Render server's URL (e.g. `https://your-server.onrender.com`).
+
+Because frontend and backend are different origins in production, the session cookie is set `sameSite: "none"; secure: true` there (and `lax`/non-secure locally, so plain `http://localhost` still works without a TLS cert) — see `packages/server/src/utils/cookies.ts`.
 
 ## LLM provider
 
